@@ -24,9 +24,8 @@
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <!-- Links -->
-    <%= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "Trips", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "List Of Restaurant", restaurants_path, class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Add Restaurant", new_restaurant_path, class: "navbar-wagon-item navbar-wagon-link" %>
 
     <!-- Avatar with dropdown menu -->
     <div class="navbar-wagon-item">
@@ -53,9 +52,8 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
+        <li><a <%= link_to "List Of Restaurant", restaurants_path %></a></li>
+        <li><a <%= link_to "Add Restaurant", new_restaurant_path %></a></li>
       </ul>
     </div>
   </div>
